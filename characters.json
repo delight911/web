@@ -1,0 +1,128 @@
+{
+  "characters": {
+    "red": {
+      "name": "Red Warrior",
+      "health": 100,
+      "speed": 5,
+      "colorClass": "character-red",
+      "moves": {
+        "punch": {
+          "damage": 10,
+          "startup": 5,
+          "recovery": 10,
+          "sound": "punch.mp3"
+        },
+        "kick": {
+          "damage": 15,
+          "startup": 8,
+          "recovery": 12,
+          "sound": "kick.mp3"
+        },
+        "special": {
+          "damage": 25,
+          "name": "Fire Punch",
+          "startup": 15,
+          "recovery": 20,
+          "sound": "special.mp3"
+        }
+      },
+      "combos": [
+        { "sequence": ["punch", "punch", "kick"], "damageMultiplier": 1.5 },
+        { "sequence": ["crouch", "kick", "punch"], "damageMultiplier": 1.8 }
+      ]
+    },
+    "blue": {
+      "name": "Blue Ninja",
+      "health": 90,
+      "speed": 7,
+      "colorClass": "character-blue",
+      "moves": {
+        "punch": {
+          "damage": 8,
+          "startup": 4,
+          "recovery": 8,
+          "sound": "punch.mp3"
+        },
+        "kick": {
+          "damage": 12,
+          "startup": 6,
+          "recovery": 10,
+          "sound": "kick.mp3"
+        },
+        "special": {
+          "damage": 22,
+          "name": "Lightning Kick",
+          "startup": 12,
+          "recovery": 18,
+          "sound": "special.mp3"
+        }
+      },
+      "combos": [
+        { "sequence": ["kick", "kick", "kick"], "damageMultiplier": 1.7 },
+        { "sequence": ["crouch", "punch", "kick"], "damageMultiplier": 1.6 }
+      ]
+    },
+    "green": {
+      "name": "Green Brawler",
+      "health": 110,
+      "speed": 4,
+      "colorClass": "character-green",
+      "moves": {
+        "punch": {
+          "damage": 12,
+          "startup": 7,
+          "recovery": 12,
+          "sound": "punch.mp3"
+        },
+        "kick": {
+          "damage": 18,
+          "startup": 10,
+          "recovery": 15,
+          "sound": "kick.mp3"
+        },
+        "special": {
+          "damage": 30,
+          "name": "Earth Slam",
+          "startup": 20,
+          "recovery": 25,
+          "sound": "special.mp3"
+        }
+      },
+      "combos": [
+        { "sequence": ["punch", "special"], "damageMultiplier": 1.8 },
+        { "sequence": ["crouch", "punch", "kick"], "damageMultiplier": 1.4 }
+      ]
+    },
+    "yellow": {
+      "name": "Yellow Monk",
+      "health": 95,
+      "speed": 6,
+      "colorClass": "character-yellow",
+      "moves": {
+        "punch": {
+          "damage": 9,
+          "startup": 5,
+          "recovery": 9,
+          "sound": "punch.mp3"
+        },
+        "kick": {
+          "damage": 14,
+          "startup": 7,
+          "recovery": 11,
+          "sound": "kick.mp3"
+        },
+        "special": {
+          "damage": 28,
+          "name": "Spirit Blast",
+          "startup": 14,
+          "recovery": 22,
+          "sound": "special.mp3"
+        }
+      },
+      "combos": [
+        { "sequence": ["punch", "punch", "punch"], "damageMultiplier": 1.3 },
+        { "sequence": ["kick", "punch", "special"], "damageMultiplier": 2.0 }
+      ]
+    }
+  }
+}

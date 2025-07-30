@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stickman Fighting Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>STICKMAN FIGHTING CHAMPIONSHIP</h1>
+        <div class="subtitle">
+          A CSS/JavaScript Fighting Game with Advanced Mechanics
+        </div>
+      </header>
+
+      <div class="game-container">
+        <div class="character-select">
+          <h2><i class="fas fa-user"></i> SELECT YOUR FIGHTER</h2>
+          <div class="character-grid" id="character-grid"></div>
+        </div>
+
+        <div class="game-arena">
+          <div class="stage">
+            <div class="health-bars">
+              <div class="health-bar player1">
+                <div class="health-fill" id="p1-health"></div>
+              </div>
+              <div class="health-bar player2">
+                <div class="health-fill" id="p2-health"></div>
+              </div>
+            </div>
+
+            <div class="combo-display" id="combo-display">COMBO 5x!</div>
+
+            <div class="fighter" id="player1">
+              <div class="stickman"></div>
+            </div>
+            <div class="fighter" id="player2">
+              <div class="stickman"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="controls-panel">
+          <h2><i class="fas fa-gamepad"></i> CONTROLS</h2>
+          <div class="controls-grid">
+            <div class="control-card">
+              <h3>Player 1</h3>
+              <ul class="move-list">
+                <li>
+                  <span class="move-name">Move Left</span
+                  ><span class="move-keys">A</span>
+                </li>
+                <li>
+                  <span class="move-name">Move Right</span
+                  ><span class="move-keys">D</span>
+                </li>
+                <li>
+                  <span class="move-name">Jump</span
+                  ><span class="move-keys">W</span>
+                </li>
+                <li>
+                  <span class="move-name">Crouch</span
+                  ><span class="move-keys">S</span>
+                </li>
+                <li>
+                  <span class="move-name">Punch</span
+                  ><span class="move-keys">J</span>
+                </li>
+                <li>
+                  <span class="move-name">Kick</span
+                  ><span class="move-keys">K</span>
+                </li>
+                <li>
+                  <span class="move-name">Special</span
+                  ><span class="move-keys">L</span>
+                </li>
+              </ul>
+            </div>
+            <div class="control-card">
+              <h3>Player 2</h3>
+              <ul class="move-list">
+                <li>
+                  <span class="move-name">Move Left</span
+                  ><span class="move-keys">←</span>
+                </li>
+                <li>
+                  <span class="move-name">Move Right</span
+                  ><span class="move-keys">→</span>
+                </li>
+                <li>
+                  <span class="move-name">Jump</span
+                  ><span class="move-keys">↑</span>
+                </li>
+                <li>
+                  <span class="move-name">Crouch</span
+                  ><span class="move-keys">↓</span>
+                </li>
+                <li>
+                  <span class="move-name">Punch</span
+                  ><span class="move-keys">1</span>
+                </li>
+                <li>
+                  <span class="move-name">Kick</span
+                  ><span class="move-keys">2</span>
+                </li>
+                <li>
+                  <span class="move-name">Special</span
+                  ><span class="move-keys">3</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="game-info">
+            <h3><i class="fas fa-info-circle"></i> GAME INFO</h3>
+            <p>
+              Health: <span id="p1-health-value">100</span> |
+              <span id="p2-health-value">100</span>
+            </p>
+            <p>Round: <span id="round">1</span></p>
+            <p>Time: <span id="time">99</span></p>
+            <button id="start-btn" class="fight-btn">START FIGHT!</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3><i class="fas fa-star"></i> Advanced Features</h3>
+          <ul>
+            <li><i class="fas fa-check"></i> Combo System with frame data</li>
+            <li><i class="fas fa-check"></i> CSS-based hit detection</li>
+            <li><i class="fas fa-check"></i> Character select screen</li>
+            <li>
+              <i class="fas fa-check"></i> Special effects with CSS animations
+            </li>
+            <li><i class="fas fa-check"></i> Health/stamina system</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h3><i class="fas fa-cogs"></i> Implementation Details</h3>
+          <ul>
+            <li>
+              <i class="fas fa-file-code"></i> Index.mjs: Game logic and
+              controls
+            </li>
+            <li>
+              <i class="fas fa-file-code"></i> Style.css: Animations and layout
+            </li>
+            <li><i class="fas fa-file-code"></i> Index.html: Game structure</li>
+            <li>
+              <i class="fas fa-file-code"></i> Characters.json: Character data
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <footer>
+        <p>
+          Stickman Fighting Championship | Built with HTML, CSS, and JavaScript
+        </p>
+      </footer>
+    </div>
+
+    <!-- Font Awesome for icons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+    <!-- Game script as module -->
+    <script type="module" src="index.mjs"></script>
+  </body>
+</html>
